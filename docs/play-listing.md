@@ -29,7 +29,7 @@ against, so describe the app rather than the diff:
 First release.
 
 Simulate a location anywhere on the map, follow a route along real roads, replay a
-GPX track, or roam within a radius. Walk, cycle and drive speeds, a floating
+GPX track, or roam within a radius. Walk, run, cycle and drive speeds, a floating
 joystick for manual control, and optional GPS drift for realistic jitter.
 </en-US>
 ```

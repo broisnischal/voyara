@@ -25,7 +25,7 @@ android {
         applicationId = "click.stroke.voyara"
         minSdk = 26
         targetSdk = 36
-        versionCode = 2
+        versionCode = 3
         versionName = "1.0"
         buildConfigField("String", "TOMTOM_API_KEY", "\"$tomtomApiKey\"")
         resValue("string", "app_name", "Voyara")
