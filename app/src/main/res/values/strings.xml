@@ -1,0 +1,7 @@
+<resources>
+    <string name="tile_label">Mock location</string>
+    <string name="channel_mock">Mock location</string>
+    <string name="notif_title">Voyara is mocking your location</string>
+    <string name="err_not_mock_app">Voyara isn\'t the selected mock location app. Pick it in Developer options → Select mock location app.</string>
+    <string name="err_interrupted">Mocking stopped: another app took over the location providers.</string>
+</resources>
