@@ -22,10 +22,10 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "app.voyara"
+        applicationId = "click.stroke.voyara"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
         buildConfigField("String", "TOMTOM_API_KEY", "\"$tomtomApiKey\"")
         resValue("string", "app_name", "Voyara")
@@ -52,6 +52,8 @@ android {
         release {
             isMinifyEnabled = true
             isShrinkResources = true
+            // Ship native symbols so Play symbolicates MapLibre crash traces.
+            ndk { debugSymbolLevel = "SYMBOL_TABLE" }
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
             signingConfig = signingConfigs.findByName("release") ?: run {
                 logger.warn("keystore.properties not found: release is signed with the debug key.")
